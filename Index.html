@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Stopwatch Timer Application </title>
+
+    <link rel="stylesheet" href="Index.css"> <!-- Linking CSS File -->
+
+    <!-- Linking Links for FONT FROM GOOGLE FONT Website -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="Container">
+
+        <h1> Stopwatch Timer Application </h1>
+
+        <div class="Stopwatch">
+
+            <div class="Timer"> 
+
+                <span id = "Minutes">00</span>
+                <span> : </span>
+                <span id = "Seconds">00</span>
+                <span> : </span>
+                <span id = "Miliseconds">00</span>
+
+            </div> <br>
+
+
+            <div class="Buttons">
+
+                <button id="Start">Start</button>
+                <button id="Stop">Stop</button>
+                <button id="Pause">Pause</button>
+                <button id="Restart">Restart</button>
+ 
+            </div>
+
+            <div class="LapTimer">
+
+                <h3  id="Lapheading"> Lap Timer </h3>
+
+                <ul id="Laptime"> </ul>
+
+            </div>
+
+        </div>
+    </div>
+
+<script src="Index.js">  </script> <!-- Linking JS File, just before the end of BODY TAG. -->
+</body>
+</html>

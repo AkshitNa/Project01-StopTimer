@@ -1,0 +1,112 @@
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35vh;
+}
+
+.Container{
+
+    background-color: pink;
+    border: 2px black solid;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 50px gray;
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    background-color: rgb(210, 99, 210);
+    border-radius: 16px;
+}
+
+@keyframes HeartBeat {
+
+    from{transform: scale(1);}
+
+    to{ transform: scale(1.05);}
+    
+}
+
+.Timer{
+    background-color: aliceblue;
+    font-size: 40px;
+    border: 2px black solid;
+    padding: 0 1.25rem 0 0.75rem;
+    box-shadow: 0 0 25px palevioletred;
+    animation: HeartBeat 1.5s alternate infinite;
+}
+
+.Timer span{
+    width: 60px;
+    display: inline-block;
+    text-align: center;
+}
+
+.Buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button{
+
+    font-size: 0.8rem;
+    font-weight: 700;
+    background-color: rgb(150, 105, 192);
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.25rem ;
+}
+
+button:hover{
+    background-color: purple;
+    cursor: pointer;
+}
+
+h3{
+    background-color: rgb(210, 99, 210);
+    width: 35%;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+ul{
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    max-height: 200px;
+    background-color: rgb(150, 105, 192);
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    width: 50%;
+}
+
+li {
+
+    padding: 1rem;
+    border-bottom: 1px solid black;
+}
+
+li:last-child{
+
+    border-bottom: none;
+}
+
+li span {
+
+    font-weight: 700;
+}
